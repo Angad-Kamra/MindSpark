@@ -1,0 +1,191 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" class="dark-mode">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MindSpark | ADHD Relaxation Games</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- External CSS -->
+  <link rel="stylesheet" href="{% static 'indexstyle2.css' %}">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">
+          <h1>MindSpark</h1>
+        </div>
+        <div style="display: flex; align-items: center;">
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#games">Games</a></li>
+            <li><a href="#adhd">ADHD Help</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="theme-toggle" id="themeToggle">
+            <div class="toggle-circle">
+              <span class="toggle-icon">☀</span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h2>Welcome to MindSpark</h2>
+      <p>Engaging games and tools to help manage ADHD in a fun way!</p>
+      <a href="#games" class="btn">Play Now</a>
+    </div>
+  </section>
+
+  <!-- Adventure Games Section -->
+  <section class="section" id="games">
+    <div class="container">
+      <h2 class="section-title">Adventure Time!</h2>
+      <div class="games-grid">
+        <!-- Triangle: Back to home -->
+        <div class="game-card">
+          <div class="game-card-image">
+            <img src="/api/placeholder/400/320" alt="Triangle">
+          </div>
+          <div class="game-card-content">
+            <h3>Triangle: Back To Home</h3>
+            <p>You are lost in the cave. Try to get out and back to home. Sometimes it can be easy, sometimes not… but don't give up and you will do it.</p>
+            <a href="#" class="play-btn">Play</a>
+          </div>
+        </div>
+        
+        <!-- Wander -->
+        <div class="game-card">
+          <div class="game-card-image">
+            <img src="/api/placeholder/400/320" alt="Wander">
+          </div>
+          <div class="game-card-content">
+            <h3>Wander</h3>
+            <p>Explore a desolate wilderness with your grappling hook. Touch the crystals to save your progress. Find the treasure.</p>
+            <a href="#" class="play-btn">Play</a>
+          </div>
+        </div>
+        
+        <!-- Offline Paradise -->
+        <div class="game-card">
+          <div class="game-card-image">
+            <img src="/api/placeholder/400/320" alt="Offline Paradise">
+          </div>
+          <div class="game-card-content">
+            <h3>Offline Paradise</h3>
+            <p>The world, a paradise, has gone offline; everything has become grey and dangerous. Traverse, jump and dash over the obstacles to turn the world back into normal.</p>
+            <a href="#" class="play-btn">Play</a>
+          </div>
+        </div>
+        
+        <!-- Quest of Tod -->
+        <div class="game-card">
+          <div class="game-card-image">
+            <img src="/api/placeholder/400/320" alt="Quest of Tod">
+          </div>
+          <div class="game-card-content">
+            <h3>Quest of Tod</h3>
+            <p>Quest of Tod is a speed running adventure game, where you stuck inside unknown place controlled by strange machine. Can you find all the keys and codes to unlock the exit before the time runs out?</p>
+            <a href="#" class="play-btn">Play</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Arcade Games Section -->
+  <section class="section arcade-section">
+    <div class="container">
+      <h2 class="section-title">Arcade Time!</h2>
+      <div class="games-grid">
+        <!-- Everyone's Sky -->
+        <div class="game-card">
+          <div class="game-card-image">
+            <img src="/api/placeholder/400/320" alt="Everyone's Sky">
+          </div>
+          <div class="game-card-content">
+            <h3>Everyone's Sky</h3>
+            <p>Bring peace to the galaxy... or war? Make allies by completing missions, study other planets, stars, defend yourself against planetary defenses and pirate groups, or makes enemies by attacking them.</p>
+            <a href="#" class="play-btn">Play</a>
+          </div>
+        </div>
+        
+        <!-- Evil Glitch -->
+        <div class="game-card">
+          <div class="game-card-image">
+            <img src="/api/placeholder/400/320" alt="Evil Glitch">
+          </div>
+          <div class="game-card-content">
+            <h3>Evil Glitch</h3>
+            <p>Strange glitches appear in your dimension, could you stop them to assimilate your world?</p>
+            <a href="#" class="play-btn">Play</a>
+          </div>
+        </div>
+        
+        <!-- Pizza Undelivery -->
+        <div class="game-card">
+          <div class="game-card-image">
+            <img src="/api/placeholder/400/320" alt="Pizza Undelivery">
+          </div>
+          <div class="game-card-content">
+            <h3>Pizza Undelivery</h3>
+            <p>Here you bring pizzas back to the pizzeria, instead of the other way around. This retro style racing game is about navigating a randomly generated 3D city in your 1986 Toyota Corolla.</p>
+            <a href="#" class="play-btn">Play</a>
+          </div>
+        </div>
+        
+        <!-- Star Catcher -->
+        <div class="game-card">
+          <div class="game-card-image">
+            <img src="/api/placeholder/400/320" alt="Star Catcher">
+          </div>
+          <div class="game-card-content">
+            <h3>Star Catcher</h3>
+            <p>A relaxing game where you catch falling stars in the night sky. Each star you catch adds to your cosmic collection and unlocks new star patterns.</p>
+            <a href="#" class="play-btn">Play</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ADHD Help Section -->
+  <section class="adhd-section" id="adhd">
+    <div class="container">
+      <h2 class="section-title">ADHD Help & Resources</h2>
+      <div class="resources">
+        <p>Explore tips, articles, and resources for managing ADHD more effectively.</p>
+        <a href="#" class="btn">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2025 MindSpark | All rights reserved</p>
+        <div class="socials">
+          <a href="https://facebook.com/mindspark" target="_blank">Facebook</a>
+          <a href="https://twitter.com/mindspark" target="_blank">Twitter</a>
+          <a href="https://instagram.com/mindspark" target="_blank">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- External JavaScript -->
+  <script src="{% static 'indexstyle2.js' %}"></script>
+</body>
+</html>

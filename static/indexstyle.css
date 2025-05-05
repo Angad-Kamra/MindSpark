@@ -1,0 +1,229 @@
+    /* General reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f0f8ff;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;  /* Reduced padding */
+      background-color: #157b8d;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      transition: background-color 0.3s ease;
+      animation: slideDown 1s ease-out;
+    }
+
+    .navbar .logo h1 {
+      color: white;
+      font-size: 2rem;  /* Reduced font size */
+      transition: color 0.3s ease;
+    }
+
+    .navbar .nav-links {
+      list-style: none;
+      display: flex;
+    }
+
+    .navbar .nav-links li {
+      margin-left: 2rem;  /* Reduced margin between links */
+      transition: transform 0.3s ease;
+    }
+
+    .navbar .nav-links li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 1rem;  /* Reduced font size */
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .navbar .nav-links li a:hover {
+      color: #ff9800;
+      transform: scale(1.1);
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 90vh;
+      background: linear-gradient(135deg, #ffcccb, #1cb0ca);
+      text-align: center;
+      padding: 2rem;
+      animation: fadeIn 1s ease-out;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      animation: slideUp 0.5s ease-out;
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      animation: slideUp 0.7s ease-out;
+    }
+
+    .cta-button {
+      padding: 0.7rem 2rem;
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      animation: fadeIn 1.2s ease-out;
+    }
+
+    .cta-button:hover {
+      background-color: #ff9800;
+      animation: bounce 0.5s infinite alternate;
+    }
+
+    /* Games Section */
+    #games {
+      padding: 10rem;
+      text-align: center;
+      background-color: #fff;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    #games h2 {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+      animation: slideUp 1s ease-out;
+    }
+
+    .games-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Keeps the layout in two columns */
+      gap: 9rem;
+      margin-top: 2rem;
+      animation: fadeInUp 1.5s ease-out;
+    }
+
+    .game-card {
+      background-color: #f9f9f9;
+      overflow:hidden;
+      padding: 100px;
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: bounceUp 1s ease-out;
+    }
+
+    .game-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
+    }
+
+    .game-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom:1rem;
+      transition: transform 0.3s ease;
+    }
+
+    .game-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .play-button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.7rem 1.5rem;
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    .play-button:hover {
+      background-color: #ff9800;
+    }
+
+    /* ADHD Section */
+    #adhd {
+      padding: 3rem;
+      text-align: center;
+      background-color: #f0f8ff;
+      animation: fadeIn 1.5s ease-out;
+    }
+
+    .resources {
+      max-width: 600px;
+      margin: 0 auto;
+      animation: slideUp 1.5s ease-out;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 1rem 0;
+      text-align: center;
+      animation: fadeIn 2s ease-out;
+    }
+
+    footer .socials a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    footer .socials a:hover {
+      color: #ff9800;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      0% { transform: translateY(50px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes bounceUp {
+      0% { transform: translateY(10px); }
+      100% { transform: translateY(0); }
+    }
+
+    @keyframes bounce {
+      0% { transform: scale(1); }
+      100% { transform: scale(1.1); }
+    }
+
+    @keyframes slideDown {
+      0% { transform: translateY(-100%); }
+      100% { transform: translateY(0); }
+    }
